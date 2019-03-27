@@ -134,10 +134,10 @@ def player_by_number(number)
     team_details[:players].each do |player_name, player_details|
       if player_details == number
         return player_name
-      end 
-    end 
-  end 
-end 
+      end
+    end
+  end
+end
 
 #returns the shoe size for a given player
 def shoe_size(name)
