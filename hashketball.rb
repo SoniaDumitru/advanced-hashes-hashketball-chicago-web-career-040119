@@ -127,6 +127,17 @@ def num_points_scored (name)
       end
   end
 end
+#number return name player associated
+
+def player_by_number(number)
+  game_hash.each do |team, team_details|
+    team_details[:players].each do |player_name, player_details|
+      if player_details == number
+        return player_name
+      end 
+    end 
+  end 
+end 
 
 #returns the shoe size for a given player
 def shoe_size(name)
