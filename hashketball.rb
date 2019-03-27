@@ -132,7 +132,7 @@ end
 def player_by_number(number)
   game_hash.each do |team, team_details|
     team_details[:players].each do |player_name, player_details|
-      if player_details == number
+      if player_details[:number] == number
         return player_name
       end
     end
